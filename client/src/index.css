@@ -71,7 +71,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
 .brand-mark { display: inline-flex; align-items: center; gap: 9px; color: #071a33; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 750; letter-spacing: -.05em; }
 .brand-mark-light { color: #fff; }
-.brand-icon { width: 29px; height: 29px; display: grid; place-items: center; color: #fff; background: #1f6bff; border-radius: 9px 5px 9px 5px; font-size: 13px; letter-spacing: -.08em; }
+.brand-icon { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px 5px 9px 5px; overflow: hidden; }
+.brand-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .brand-name { font-size: 18px; }
 .brand-name span { color: #1f6bff; }
 .desktop-nav { display: flex; align-items: center; gap: 27px; margin-left: auto; }

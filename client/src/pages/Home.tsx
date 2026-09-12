@@ -123,7 +123,7 @@ function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; 
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#top" className={`brand-mark ${light ? "brand-mark-light" : ""}`} aria-label="KlikSite, retour en haut">
-      <span className="brand-icon">K</span>
+      <span className="brand-icon"><img src="/manus-storage/kliksite-logo_cd85550b.png" alt="" /></span>
       <span className="brand-name">Klik<span>Site</span></span>
     </a>
   );
