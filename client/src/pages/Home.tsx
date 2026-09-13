@@ -26,7 +26,7 @@ const sectors = [
     number: "01",
     title: "Restauration rapide",
     description: "Transformez les recherches locales en commandes.",
-    image: "/manus-storage/kliksite-food_d830ddc8.png",
+    image: "/assets/kliksite-food.webp",
     href: "https://snack-eclair-bamako.netlify.app",
     className: "sector-card sector-card-wide",
     objectPosition: "center 46%",
@@ -35,7 +35,7 @@ const sectors = [
     number: "02",
     title: "Salon de beauté",
     description: "Présentez vos services et simplifiez les réservations.",
-    image: "/manus-storage/kliksite-beauty_cc09c0d6.png",
+    image: "/assets/kliksite-beauty.webp",
     href: "https://sublime-coiffure-bamako.netlify.app",
     className: "sector-card",
     objectPosition: "center 48%",
@@ -44,7 +44,7 @@ const sectors = [
     number: "03",
     title: "Immobilier",
     description: "Donnez à vos biens l'image qu'ils méritent.",
-    image: "/manus-storage/kliksite-realestate_a49672ae.png",
+    image: "/assets/kliksite-realestate.webp",
     href: "https://bamako-immo.netlify.app",
     className: "sector-card sector-card-tall",
     objectPosition: "center 54%",
@@ -53,7 +53,7 @@ const sectors = [
     number: "04",
     title: "Transit et logistique",
     description: "Présentez clairement vos services et facilitez les demandes.",
-    image: "/manus-storage/kliksite-logistics_1512e4bb.png",
+    image: "/assets/kliksite-logistics.webp",
     href: "https://sahel-transit-bamako.netlify.app",
     className: "sector-card sector-card-wide",
     objectPosition: "center 52%",
@@ -123,7 +123,7 @@ function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; 
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <a href="#top" className={`brand-mark ${light ? "brand-mark-light" : ""}`} aria-label="KlikSite, retour en haut">
-      <span className="brand-icon"><img src="/manus-storage/kliksite-logo_cd85550b.png" alt="" /></span>
+      <span className="brand-icon"><img src="/assets/kliksite-logo.png" alt="" /></span>
       <span className="brand-name">Klik<span>Site</span></span>
     </a>
   );
@@ -221,7 +221,7 @@ function App() {
             </Reveal>
             <Reveal className="hero-visual-wrap" delay={0.1}>
               <div className="hero-visual">
-                <img src="/manus-storage/kliksite-hero_c74ca1df.png" alt="Maquette de site web sur ordinateur et smartphone" loading="eager" fetchPriority="high" decoding="async" />
+                <img src="/assets/kliksite-hero.webp" alt="Maquette de site web sur ordinateur et smartphone" loading="eager" fetchPriority="high" decoding="async" />
                 <div className="hero-float hero-float-message"><MessageCircle size={15} /><span>Nouvelle demande</span><strong>WhatsApp</strong></div>
                 <div className="hero-float hero-float-cursor"><MousePointer2 size={15} /><span>Votre site, clair</span></div>
               </div>
