@@ -205,6 +205,7 @@ function vitePluginStorageProxy(): Plugin {
 
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()],
+  base: mode === "github-pages" ? "/kliksite-bamako/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -215,7 +216,7 @@ export default defineConfig(({ mode }) => ({
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, mode === "cloudflare" ? "dist" : "dist/public"),
+    outDir: path.resolve(import.meta.dirname, mode === "cloudflare" || mode === "github-pages" ? "dist" : "dist/public"),
     emptyOutDir: true,
   },
   server: {
